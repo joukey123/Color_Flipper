@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 15px;
+  display: block;
+  padding: 0 10px;
+}
+a:hover {
+  color: tomato;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: tomato;
+}
+header {
+  background-color: white;
+  display: flex;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.title {
+  width: 50%;
+  text-align: right;
+  padding: 15px;
+  text-align: center;
+}
+.nav {
+  width: 50%;
+  display: flex;
+  padding: 15px;
+}
+.nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.change-btn {
+  margin-top: 30px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.change-btn:hover {
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.color-name {
+  color: royalblue;
+}
+
+@media screen and (max-width: 800px) {
+  .text-box {
+    text-align: center;
+  }
+  .text-box > h1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
